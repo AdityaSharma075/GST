@@ -1,7 +1,13 @@
 const express = require('express');
-const project_controller=require('../controllers/project_controller');
+// const multer = require('multer');
+const Project = require('../models/project');
+
 const router = express.Router();
 
-router.get('/project',project_controller.project);
+// const upload = multer({ dest: 'uploads/project/images/' })
+const project_controller=require('../controllers/project_controller');
+
+router.get('/',project_controller.project);
+router.post('/create' ,Project.uploadedImage, project_controller.create);
 
 module.exports = router;

@@ -1,4 +1,28 @@
 <%-include("header") -%>
- <h1>This is Project section</h1>
+    <br>
+    <br>
+    <br>
+ <% if(locals.user){ %>
+    <form action="/project/create" method="POST" enctype="multipart/form-data">
+        <input type="file" name = "image" placeholder="upload image" > 
+        <input type="text" name="title" placeholder="Enter title...">
+        <textarea name="body"  placeholder="Enter Body..." cols="30" rows="5"></textarea>
+        <input type="submit" value="Save">
+    </form>
+
+ <% } %>
+
+ <br>
+ <br>
+ <br>
+    <% for(i of projects ) {%>
+            <div style="display: flex;">
+                <img src="<%= i.image %>" alt=" <%= i.title%>"  width="200">
+                <h1><%= i.title%></h1>
+                <p>
+                    <%= i.body%>
+                </p>
+            </div>
+    <% } %>
 </div>
 <%-include("footer") -%>

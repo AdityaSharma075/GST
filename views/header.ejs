@@ -25,6 +25,9 @@
                   <a class="nav-link" href="/about">About</a>
                   <a class="nav-link" href="/project">Project</a>
                   <a class="nav-link" href="/volunteer">Volunteer</a>
+                  <% if (locals.user ) {%>
+                    <span class="nav-link" style="font-weight: bolder;">Admin</span>
+                  <%}%>
                 </div>
               </div>
             </div>
