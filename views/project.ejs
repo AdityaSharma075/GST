@@ -3,18 +3,18 @@
     <br>
     <br>
  <% if(locals.user){ %>
-    <form action="/project/create" method="POST" enctype="multipart/form-data">
-        <input type="file" name = "image" placeholder="upload image" > 
-        <input type="text" name="title" placeholder="Enter title...">
-        <textarea name="body"  placeholder="Enter Body..." cols="30" rows="5"></textarea>
-        <input type="submit" value="Save">
-    </form>
+    <div class="project-form">
+        <form action="/project/create" method="POST" enctype="multipart/form-data">
+            <input type="file" name = "image" placeholder="upload image" > 
+            <input type="text" name="title" placeholder="Enter title...">
+            <textarea name="body"  placeholder="Enter Body..." cols="30" rows="5"></textarea>
+            <input type="submit" value="Save">
+        </form>
+    </div>
 
  <% } %>
 
- <br>
- <br>
- <br>
+ 
     <% for(i of projects ) {%>
             <div style="display: flex;">
                 <img src="<%= i.image %>" alt=" <%= i.title%>"  width="200">

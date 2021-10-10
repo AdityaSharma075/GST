@@ -10,27 +10,73 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d5faf99153.js" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light nav-div">
+    
+    <!-- navbar section -->
+    <section id="top">
+      <div class="social-bar">
+        <a href="https://www.facebook.com/lalapankaj10/"><i class="fab fa-facebook i"></i></a>
+        <a href=""><i class="fab fa-instagram i"></i></a>
+        <a href="https://www.youtube.com/channel/UCJQyofyh8PoJN2xUFSDqlDA"><i class="fab fa-youtube i"></i></a>
+        <a href=""><i class="fab fa-twitter i"></i></a>
+      </div>
+       <div class="nav-div">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
               <a class="navbar-brand" href="/">GST</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="/">Home</a>
-                  <a class="nav-link" href="/about">About</a>
-                  <a class="nav-link" href="/project">Project</a>
-                  <a class="nav-link" href="/volunteer">Volunteer</a>
-                  <% if (locals.user ) {%>
-                    <span class="nav-link" style="font-weight: bolder;">Admin</span>
-                  <%}%>
-                </div>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      About
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="/about/story">Our Story</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="/about/team">Our Commitee members</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="/about/mission">Vision and Mission</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/project">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/volunteer">Volunteer</a>
+                  </li>
+                  <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <!-- <li><a class="dropdown-item active" href="#"></a></li>
+                      <li><a class="dropdown-item" href="#">Projects</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                    </ul>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <button class="btn btn-outline-success" type="submit">Donate</button>
+                </form>
               </div>
             </div>
           </nav>
+        </div>
+    </section>
+
+    
+
     
     

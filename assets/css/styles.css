@@ -1,3 +1,123 @@
 body{
-    background-color: blue;
+    background-color:#FEF9EF;
+    text-align: center;
 }
+/* Top-section */
+.social-bar{
+    width:100%;
+    text-align: center;
+    margin-top:5%;
+    padding:2%;
+    background-color: black;
+    font-size: 1.5rem;
+    height:auto
+}
+.i{
+    color:white;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.i:hover{
+    color:#C8C6C6;
+    font-size:2rem;
+}
+.nav-div{
+    width:70%;
+    margin:3rem auto;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.navbar-brand{
+    font-size: 3rem;
+    margin-right:3rem;
+}
+.nav-item{
+    margin-right:2rem;
+}
+.nav-item:hover{
+    box-shadow: 0 0 5px black;
+    background-color: #C9CCD5;
+    border-radius: 10px;
+}
+.middle{
+    width:60%;
+    margin: 3% 20%;
+    text-align: left;
+}
+
+/* home-page  and story section*/
+.home-img{
+    width:50%;
+    height:55%;
+    border:none;
+    border-radius: 15rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.home-heading .home-p{
+    width:90%;
+    height:auto;
+    margin: 2% 5%;
+    padding-top:1rem;
+    font-size: 2rem;
+}
+.home-p{
+  font-size:1.5rem;
+  line-height: 1.5;;
+}
+
+/* Team Section */
+.team{
+    text-align: center;
+    margin:5%;
+}
+.member-img{
+    width:40%;
+    height:40%;
+    margin-bottom:10px;
+}
+/* Mission-vission Section */
+.mission{
+  text-align: center;
+  margin:10%;
+}
+/* footer-section */
+footer{
+    background-color: #261C2C;
+    color:white;
+    font-size:1rem;
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    padding:5rem;
+    margin-top:5rem;
+}
+.foo-p{
+   display: flex;
+   flex-direction: column;
+   margin:5px;
+   left:5rem;
+   font-size: 1 rem;
+   color:white;
+   line-height: 2;
+   width:auto;
+}
+.foo-c{
+    position: absolute;
+    right:5%;
+    font-size: 1rem; 
+    width:auto;
+}
+.foo-s{
+    position: absolute;
+    right:40%;
+    width:auto;
+}
+
+/* media-query */
+ /* @media (max_width:1500px) {
+    .media-foo{
+        text-align: center;
+    }
+}  */

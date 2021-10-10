@@ -6,9 +6,9 @@ const volunteer_controller=require('../controllers/volunteer_controller');
 const router = express.Router();
 
 router.get('/',home_controller.home);
-// router.get('/about',require('./about'));
+ router.use('/about',require('./about'));
 router.use('/project',require('./project'));
 router.use('/admin' , require('./admin'));
-// router.get('/volunteer',require('./volunteer'));
+ router.use('/volunteer',require('./volunteer'));
 
 module.exports = router;
