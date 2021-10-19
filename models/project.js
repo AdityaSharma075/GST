@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const multer = require('multer');
 const path = require('path');
-const IMAGE_PATH = path.join('/uploads/project/images')
+const IMAGE_PATH =path.join('/uploads/project/images')
 
 const projectSchema = new mongoose.Schema({
     image : {

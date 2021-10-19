@@ -13,7 +13,7 @@ const port = 8000;
 
 app.use(express.urlencoded());
 app.use(cookieParser());
-app.use('/uploads' , express.static( __dirname , + '/uploads'));
+app.use('/uploads' , express.static(path.join(__dirname ,  '/uploads') ));
 app.use(express.static('./assets'));
 
 

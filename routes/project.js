@@ -8,6 +8,6 @@ const router = express.Router();
 const project_controller=require('../controllers/project_controller');
 
 router.get('/',project_controller.project);
-router.post('/create' ,Project.uploadedImage, project_controller.create);
+router.post('/create' , project_controller.create);
 
 module.exports = router;
