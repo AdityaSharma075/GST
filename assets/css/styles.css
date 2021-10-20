@@ -1,6 +1,9 @@
 body{
-    background-color:#FEF9EF;
+    background-color:white;
     text-align: center;
+    background-color: white;
+background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 /* Top-section */
 .social-bar{
@@ -21,12 +24,14 @@ body{
     color:#C8C6C6;
     font-size:2rem;
 }
+
 .nav-div{
     width:70%;
     margin:3rem auto;
     font-size: 1.5rem;
     text-align: center;
 }
+
 .navbar-brand{
     font-size: 3rem;
     margin-right:3rem;
@@ -66,21 +71,81 @@ body{
   font-size:1.5rem;
   line-height: 1.5;;
 }
+/* Story Section */
+.story-img{
+   width:100% ;
+   height: 80%;
+   border-radius: 10px;
+   box-shadow: 0 0 5px black;
+   padding:10px;
+   margin: 2rem 0;
+}
 
 /* Team Section */
 .team{
-    text-align: center;
     margin:5%;
+    width:80%;
+    height:50%;
+    box-shadow: 0 0 5px black;
+    display:flex;
+    padding:10px;
+    border-radius:10px;
+}
+#lead{
+ background-color: #D1E8E4;
+ padding:2px;
+ font-weight: bold;
+ font-style: italic;
+}
+.left{
+    width:40%;
+    height:100%;
+    text-align: center;
+    margin:auto;
+}
+.right{
+    text-align: center;
+    width:80%;
+    height:100%;
+    line-height: 1.75;
+    font-size: large;
 }
 .member-img{
+    width:60%;
+    height:60%;
+}
+.other-mem{
+    width:80%;
+    height:20%;
+    margin: 5%;
+    text-align: center;
+    box-shadow: 0 0 5px black;
+    background-color: #DDBEBE;
+    padding:10px;
+    border-radius: 10px;
+}
+.carou{
+    width:60%;
+    margin:auto;
+}
+
+.carou .member-img{
     width:40%;
-    height:40%;
-    margin-bottom:10px;
+    height: 40%;
+}
+.designation{
+    display: ;
 }
 /* Mission-vission Section */
 .mission{
   text-align: center;
   margin:10%;
+  box-shadow: 0 0 5px black;
+  border-radius: 10px;
+}
+.mission-img{
+    width:100%;
+    border-radius: 10px;
 }
 /* footer-section */
 footer{
