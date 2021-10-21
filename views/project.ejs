@@ -1,28 +1,39 @@
 <%-include("header") -%>
-    <br>
-    <br>
-    <br>
- <% if(locals.user){ %>
-    <div class="project-form">
-        <form action="/project/create" method="POST" enctype="multipart/form-data">
-            <input type="file" name = "image" placeholder="upload image" > 
-            <input type="text" name="title" placeholder="Enter title...">
-            <textarea name="body"  placeholder="Enter Body..." cols="30" rows="5"></textarea>
-            <input type="submit" value="Save">
-        </form>
-    </div>
 
- <% } %>
-
- 
-    <% for(i of projects ) {%>
-            <div style="display: flex;">
-                <img src="<%= i.image %>" alt=" <%= i.title%>"  width="200">
+    <div class="project-div">
+        <% for(i of projects ) {%>
+            <div>
+                <img src="<%= i.image %>" alt=" <%= i.title%>" class="project-img">
                 <h1><%= i.title%></h1>
                 <p>
                     <%= i.body%>
                 </p>
             </div>
     <% } %>
-</div>
+    </div>
+     <hr>
+    <% if(locals.user){ %>
+    <div class="project">
+            <h1>GST</h1>
+            <p>Add more projects to your website</p>
+            <div class="project-form">
+                <form>
+                    <div class="mb-3">
+                        <label for="Name" class="form-label">Project Name</label>
+                        <input type="text" class="form-control" id="Name" placeholder="Enter Project Name">
+                      </div>
+                      <div class="mb-3">
+                        <label for="About" class="form-label">About Project</label>
+                        <textarea class="form-control" id="About" placeholder="Describe your Project"></textarea>
+                      </div>
+                      <div class="mb-3">
+                        <input type="file" for="About" class="form-label"></input>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Add</button>
+                  </form>
+            </div>
+    </div>
+    <% } %>
+    
+
 <%-include("footer") -%>
