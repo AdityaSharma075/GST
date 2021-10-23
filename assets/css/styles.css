@@ -149,15 +149,16 @@ background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
 }
 
 /* Project-Section */
-.project-div{
-   text-align: left;
-   width:80%;
-   height:auto;
-   margin: auto; 
+.projects-section{
+ width:80%;
+ height:auto;
+ margin:5% auto;
+ display:flex;
+ flex-direction: column;
 }
 .project-img{
-    width:200px;
-    height:200px;
+    width:300px;
+    height:300px;
     margin:10px auto;
 }
 .project{
@@ -174,6 +175,11 @@ background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
     height:auto;
     text-align: left;
     margin:10% auto;
+}
+.card{
+    box-shadow: 0 0 10px grey;
+    width:60%;
+    margin: 5% auto;
 }
 /* footer-section */
 footer{
