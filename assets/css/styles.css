@@ -179,7 +179,7 @@ body {
 .card {
   box-shadow: 0 0 10px grey;
   width: 60%;
-  margin: 5% auto;
+  margin: 6% 7px;
 }
 /* Volunteer */
 .volunteer-img {
@@ -192,6 +192,12 @@ body {
   width: 50%;
   height: 50%;
   margin: auto;
+}
+.frow {
+  display: flex;
+  flex-direction: row;
+  width:80%;
+  margin:auto
 }
 /* footer-section */
 footer {
