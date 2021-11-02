@@ -1,19 +1,135 @@
 <%-include("header") -%>
- 
-
-    <form action="/volunteer/create" method="post">
-        <input type="text" name="name" id="" placeholder="Enter name..." required>
-        <input type="text" name="email" id="" placeholder="Enter email..." required>
-        <input type="number" name="mob" id="" placeholder="Enter Mobile..." maxlength="10" required>
-        <label for="category">Select a category:</label>
-            <select name="category" >
-            <option value="plant">plant</option>
-            <option value="books">books</option>
-            </select>
-            <br>
-        <label for="Why">Why you want to join?..</label>
-        <textarea name="Why" id="" cols="30" rows="2" ></textarea>
-        <input type="submit" value="submit">
-    </form>
+   <div class="middle">
+       <h1>Volunteer</h1>
+       <div>
+        <img class="volunteer-img"src="https://www.elegantthemes.com/blog/wp-content/uploads/2018/03/Volunteer-Management-Software.png" alt="volunteer img"/> 
+       </div>
+       <div class="abt-volunteer">
+           <h2>Be The Change You Want To See </h2>
+          <p>Volunteers are idealistically motivated persons who want to devote some portion of their lives to serving others. 
+           It is personal wish/desire of the individual to do volunteer services to organization. 
+           Individual are coming for voluntary services to get self-satisfaction for them.
+          </p>
+          <p>If You are optimistic and hardworking youth and you want to give a small part
+            of time from your life to serving someone and help other or 
+            You are a retired person and want to do some unpaid work in your free time willingly then you can join as a volunteer 
+          </p>
+       </div>
+       <div class="volunteer-opportunity">
+         <h2>Volunteering opportunities</h2>
+        <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="card" style="width: 20rem;">
+                <img src="https://cdn-icons-png.flaticon.com/512/2830/2830082.png" class="card-img-top card-img" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Contribute towards enviornment sustainability by volunteering in our plantation programs</p>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img src="https://cdn-icons.flaticon.com/png/512/1719/premium/1719380.png?token=exp=1635334335~hmac=73977ce1e996d113a4e4ad3a8e4c13ac" class="card-img-top card-img" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Help and medicate domestic Animal by volunteering in our animal welfare program</p>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img src="https://t4.ftcdn.net/jpg/02/72/57/39/240_F_272573987_J9GMeqEQJc8H3kiEUFRwZhZTOpX3WYtf.jpg" class="card-img-top card-img" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Volunteer for Visting Oldage homes and bring smiles on their faces</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 20rem;">
+                <img src="https://cdn-icons.flaticon.com/png/128/2702/premium/2702162.png?token=exp=1635334528~hmac=1f06049d860693e8377cfeaaf4d2b07e" class="card-img-top card-img" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Volunteer in education and literacy program visit schools and teach poor children</p>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img src="https://cdn-icons.flaticon.com/png/512/2967/premium/2967188.png?token=exp=1635334619~hmac=87f3762072640705438a556865b39b31" class="card-img-top card-img" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Volunteer in Offline fund raising campaigns</p>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img src="https://cdn-icons.flaticon.com/png/512/1615/premium/1615708.png?token=exp=1635334699~hmac=372f66acd825df7aebaabc8d59d0f454" class="card-img-top card-img" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Volunteer in Women empowerment programs to help women and teach them how to become self-dependent</p>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="card" style="width: 20rem;">
+                <img src="https://cdn-icons-png.flaticon.com/512/2843/2843199.png" class="card-img-top card-img" alt="...">
+                <div class="card-body">
+                  <p class="card-text">volunteer in programs for Specially abled persons
+                    and make them realise that they are not less than anybody
+                  </p>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img src="https://cdn-icons.flaticon.com/png/128/2787/premium/2787546.png?token=exp=1635334982~hmac=8613e54aa2c5715dc85f412bf045eccc" class="card-img-top card-img" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Volunteer in Online fund raising campaigns</p>
+                </div>
+              </div>
+              <div class="card" style="width: 20rem;">
+                <img src="https://cdn-icons.flaticon.com/png/128/3686/premium/3686833.png?token=exp=1635335099~hmac=45ee47a0bdb4b76ef7ad4919916007dd" class="card-img-top card-img" alt="...">
+                <div class="card-body">
+                  <p class="card-text">Volunnteer in Events and Campaigns in organising and managing</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+       </div>
+   </div>
+    <div class="form-section">
+        <h1>GST</h1>
+        <p>Hey You Can Also be ChangeMaker</p>
+        <div class="form">
+            <form action="/volunteer/create" method="POST" enctype="multipart/form-data">
+                  <div class="mb-3">
+                    <label for="Name" class="form-label">Name</label>
+                    <input type="text" name="Name" class="form-control" id="Name" placeholder="Enter Name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="About" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email address"></input>
+                  </div>
+                  <div class="mb-3">
+                    <label for="About" class="form-label">Email</label>
+                    <input type="text" class="form-control" name="phone-no" id="phone-no" placeholder="Enter your Mobile Number"></input>
+                  </div>
+                  <div class="mb-3">
+                    <label for="category" class="form-label" >Join Volunteer As:</label>
+                    <select name="category" class="form-control" >
+                     <option value="Online-fund Raiser">Online-fund Raiser</option>
+                     <option value="Offline-fund Raiser">Offline-fund Raiser</option>
+                     <option value="Event and Campaigns organizer">Event and Campaigns organizer</option>
+                     <option value="Visitor in Schools , oldage homes , healthcare Wokrshops">Visitor in Schools , oldage homes , healthcare Wokrshops</option>
+                     <option value="Health realated campaigns">Health realated campaigns</option>
+                     <option value="Enviornment Welfare">Enviornment Sustainability</option>
+                     <option value="Education & Literacty">Education & Literacty</option>
+                     <option value="Specially Abled People">Specially abled People</option>
+                     <option value="Women Empowerment">Women Empowerment</option>
+                     <option value="Animal Welfare">Animal Welfare</option>
+                    </select>
+                    <hr class="dothr">
+                    <label for ="skill">Write Us to Show Your Skills</label>
+                    <a href="">Click Here</a>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-md">Submit Your Request</button>
+              </form>
+        </div>
 </div>
 <%-include("footer") -%>

@@ -7,7 +7,7 @@ const router = express.Router();
 // const upload = multer({ dest: 'uploads/project/images/' })
 const project_controller=require('../controllers/project_controller');
 
-router.get('/',project_controller.project);
+router.get('/',project_controller.projects);
 router.post('/create' , project_controller.create);
-
+router.get('/:id',project_controller.project)
 module.exports = router;

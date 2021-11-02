@@ -7,7 +7,7 @@ const router = express.Router();
 
 router.get('/',home_controller.home);
  router.use('/about',require('./about'));
-router.use('/project',require('./project'));
+router.use('/projects',require('./project'));
 router.use('/admin' , require('./admin'));
  router.use('/volunteer',require('./volunteer'));
 
