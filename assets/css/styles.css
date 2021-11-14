@@ -6,6 +6,19 @@ body {
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
 }
 /* Top-section */
+.name {
+  font-family: 'Playfair Display', serif;
+  font-weight: bold;
+}
+.links,
+h1,
+h2 {
+  font-family: 'Merriweather', serif;
+}
+.logo {
+  width: 20%;
+  height: 20%;
+}
 .social-bar {
   width: 100%;
   text-align: center;
@@ -60,12 +73,13 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-.home-heading .home-p {
+.home-heading {
   width: 90%;
   height: auto;
   margin: 2% 5%;
   padding-top: 1rem;
   font-size: 2rem;
+  font-family: 'Merriweather', serif;
 }
 .home-p {
   font-size: 1.5rem;
@@ -179,7 +193,7 @@ body {
 .card {
   box-shadow: 0 0 10px grey;
   width: 30vw;
-  margin: 10px
+  margin: 10px;
 }
 /* Volunteer */
 .volunteer-img {
@@ -196,8 +210,8 @@ body {
 .frow {
   display: flex;
   flex-direction: row;
-  width:80%;
-  margin:auto
+  width: 80%;
+  margin: auto;
 }
 /* footer-section */
 footer {
@@ -231,14 +245,110 @@ footer {
   right: 40%;
   width: auto;
 }
-hr {
+/* hr {
   border-style: dotted none none;
   border-width: 6px;
   border-color: black;
   width: 10%;
   margin: 50px auto;
+} */
+/* Donate Section */
+#donate {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+  z-index: 0;
+}
+.donate-left {
+  width: 40%;
+  margin: 5% 5%;
+  text-align: left;
+}
+#donate-right {
+  width: 50%;
+  margin-left: 5px;
+  display: flex;
+  flex-direction: column;
+}
+#donate-form {
+  /* display: flex;
+  flex-direction: column; */
+  text-align: left;
+  margin-top: 5%;
+}
+.input {
+  width: 70%;
+  height: auto;
+  margin: 5px auto;
+}
+.form-btm {
+  margin-bottom: 0;
+  text-align: center;
+}
+.visa-img {
+  width: 50%;
+  height: 60%;
+  margin-top: 1.2rem;
+}
+.donate-btn {
+  margin-top: 1.2rem;
 }
 
+#confirm {
+  width: 55%;
+  height: auto;
+  z-index: 1;
+  position: absolute;
+  top: 70%;
+  left: 25%;
+  box-shadow: 10px 10px 10px 10px #595260;
+  visibility: hidden;
+  align-items: center;
+  border-radius: 10px;
+}
+#confirm-container {
+  width: auto;
+  margin: auto;
+  margin-top: 5%;
+  align-items: center;
+  
+}
+.con-top{
+align-items: center;
+display: flex;
+flex-direction: column;
+}
+
+/* ThankYou page */
+.thankyou-page {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin-top:10%;
+}
+.thank-box {
+  width: 50%;
+  height: auto;
+  margin: auto;
+  border-radius: 15px;
+  text-align: center;
+  padding:10px;
+
+}
+#go-home{
+  text-decoration: none;
+  font-size: 1rem;
+  border: 1px solid black;
+  padding:10px;
+  background-color:#5C7AEA;
+  color:white;
+  border-radius: 5px;
+}
+#go-home:hover{
+  background-color: #3D56B2;
+}
 /* media-query */
 /* @media (max_width:1500px) {
     .media-foo{
@@ -255,17 +365,17 @@ hr {
   }
 } */
 @media screen and (max-width: 700px) {
-  .projects-section{
+  .projects-section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  .card{
+  .card {
     width: 70vw;
   }
 }
-@media screen and (max-width : 600px ){
-  .mission{
+@media screen and (max-width: 600px) {
+  .mission {
     margin: 2%;
     margin-top: 5%;
   }

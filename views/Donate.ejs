@@ -1,17 +1,49 @@
 <%-include("header") -%>
 
-<div id= "payment-container">
-    <h1>We are glad you came here for Donating </h1>
-
-    <form action="/donate/confirm" id = "donate-form" method="post">
-        <label for="btn" class="form-label"><h3>Enter Amount you want to donate</h3></label>
-        <br>
-        <input type="number" name="Value" id="btn">
-        <input type="Submit" class="btn btn-primary"value="Donate">
+<div id="donate">
+  <div class="donate-left">
+    <h1>Donate Us</h1>
+    <hr id="do-hr" />
+    <p>Donate us to support Better Tomorrow and bring smiles.
+      Your little support makes a great difference
+    </p>
+    <p>
+      You agree to share information entered on this page with Giving and
+      Sharing Trust and RazorPay adhering to applicable laws
+    </p>
+  </div>
+  <div id="donate-right">
+    <form action="/donate/confirm" id="donate-form" method="post">
+        <div class="mb-3">
+            <label for="Name" class="form-label"><i class="fas fa-user"></i> Name</label>
+            <input type="text" name="Name" class="form-control" id="Name" placeholder="Enter Name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label"><i class="fas fa-envelope"></i>Email</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email address" required></input>
+          </div>
+          <div class="mb-3">
+            <label for="phone"class="form-label"><i class="fas fa-mobile"></i> Mobile No.</label>
+            <input type="text" class="form-control" name="phone" id="phone-no" placeholder="Enter your Mobile Number" required></input>
+          </div>
+          <div class="mb-3">
+            <label for="amount" class="form-label"><i class="fas fa-rupee-sign"></i> Amount</label>
+            <input type="text" class="form-control" name="amount" id="phone-no" placeholder="Enter Amount" required></input>
+          </div>
+      <div class="form-btm">
+        <img src="/images/visa.png" class="visa-img" alt="visa-img"/>
+        <input type="Submit" class="btn btn-primary donate-btn" value="Donate" />
+      </div>
     </form>
+  </div>
 </div>
-    
+<div id="confirm">
+  <div class="con-top">
+    <img src="/images/GST.png" class="logo"/>
+    <h1>GST</h1>
+  </div>
 
+</div>
 
 <%-include("footer") -%>
 <script src="https://checkout.razorpay.com/v1/checkout.js"></script>

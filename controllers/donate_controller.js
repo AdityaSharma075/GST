@@ -7,7 +7,7 @@ module.exports.donate = function(req,res){
 
 module.exports.confirm = function(req,res){
     var options = {
-        amount: req.body.Value,  // amount in the smallest currency unit
+        amount: req.body.amount*100,  // amount in the smallest currency unit
         currency: "INR",
         receipt: "order_rcptid_11"
       };
@@ -27,8 +27,8 @@ module.exports.thankyou = function(req,res){
     const hash = crypto.createHmac('sha256', secret)
                    .update(`${req.body.razorpay_order_id}` + "|" + `${req.body.razorpay_payment_id}` )
                    .digest('hex');
-
-
+    
+    
     if(hash == req.body.razorpay_signature){
         res.render('thankyou');
     }else{
