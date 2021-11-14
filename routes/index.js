@@ -10,5 +10,6 @@ router.get('/',home_controller.home);
 router.use('/projects',require('./project'));
 router.use('/admin' , require('./admin'));
  router.use('/volunteer',require('./volunteer'));
+ router.use('/donate' , require('./donate'));
 
 module.exports = router;

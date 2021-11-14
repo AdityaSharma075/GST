@@ -103,22 +103,22 @@
         <h1>GST</h1>
         <p>Hey You Can Also be ChangeMaker</p>
         <div class="form">
-            <form action="/volunteer/create" method="POST" enctype="multipart/form-data">
+            <form action="/volunteer/create" method="POST" >
                   <div class="mb-3">
                     <label for="Name" class="form-label">Name</label>
-                    <input type="text" name="Name" class="form-control" id="Name" placeholder="Enter Name">
+                    <input type="text" name="Name" class="form-control" id="Name" placeholder="Enter Name" required>
                   </div>
                   <div class="mb-3">
                     <label for="About" class="form-label">Email</label>
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email address"></input>
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email address" required></input>
                   </div>
                   <div class="mb-3">
-                    <label for="About" class="form-label">Email</label>
-                    <input type="text" class="form-control" name="phone-no" id="phone-no" placeholder="Enter your Mobile Number"></input>
+                    <label for="About" class="form-label">Mobile No.</label>
+                    <input type="text" class="form-control" name="phone" id="phone-no" placeholder="Enter your Mobile Number" required></input>
                   </div>
                   <div class="mb-3">
                     <label for="category" class="form-label" >Join Volunteer As:</label>
-                    <select name="category" class="form-control" >
+                    <select name="category" class="form-control" required >
                      <option value="Online-fund Raiser">Online-fund Raiser</option>
                      <option value="Offline-fund Raiser">Offline-fund Raiser</option>
                      <option value="Event and Campaigns organizer">Event and Campaigns organizer</option>
@@ -134,8 +134,9 @@
                     <label for ="skill">Write Us to Show Your Skills</label>
                     <a href="">Click Here</a>
                   </div>
-                  <button type="submit" class="btn btn-primary btn-md">Submit Your Request</button>
+                  <input type="submit" class="btn btn-primary btn-md" value="Submit Your Request">
               </form>
         </div>
 </div>
 <%-include("footer") -%>
+

@@ -9,7 +9,7 @@ exports.newVolunteer = (Voulenteer)=>{
         html  : htmlString
     } , (err , info)=>{
         if(err){console.log("Error in sending mail " , err);return;}
-        console.log("mail sent " , info)
+        // console.log("mail sent " , info)
 
     })
 }
@@ -23,7 +23,7 @@ exports.newVolunteerInfo = (Voulenteer)=>{
         html  : htmlString
     } , (err , info)=>{
         if(err){console.log("Error in sending mail " , err);return;}
-        console.log("mail sent " , info)
+        // console.log("mail sent " , info)
 
     })
 }

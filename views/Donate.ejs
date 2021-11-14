@@ -1,4 +1,18 @@
 <%-include("header") -%>
- <h1>This is Donate section</h1>
+
+<div id= "payment-container">
+    <h1>We are glad you came here for Donating </h1>
+
+    <form action="/donate/confirm" id = "donate-form" method="post">
+        <label for="btn" class="form-label"><h3>Enter Amount you want to donate</h3></label>
+        <br>
+        <input type="number" name="Value" id="btn">
+        <input type="Submit" class="btn btn-primary"value="Donate">
+    </form>
 </div>
+    
+
+
 <%-include("footer") -%>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<script src="/js/razorPay.js"></script>

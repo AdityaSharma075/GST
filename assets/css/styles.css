@@ -133,9 +133,7 @@ body {
   width: 40%;
   height: 40%;
 }
-.designation {
-  display: ;
-}
+
 /* Mission-vission Section */
 .mission {
   text-align: center;
@@ -150,11 +148,13 @@ body {
 
 /* Project-Section */
 .projects-section {
-  width: 80%;
+  width: 80vw;
   height: auto;
-  margin: 5% auto;
+  margin: auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .project-img {
   width: 90%;
@@ -178,8 +178,8 @@ body {
 }
 .card {
   box-shadow: 0 0 10px grey;
-  width: 60%;
-  margin: 6% 7px;
+  width: 30vw;
+  margin: 10px
 }
 /* Volunteer */
 .volunteer-img {
@@ -245,3 +245,28 @@ hr {
         text-align: center;
     }
 }  */
+/* @media screen and (max-width: 900px) {
+  .projects-section{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .card{
+    width: 40vw;
+  }
+} */
+@media screen and (max-width: 700px) {
+  .projects-section{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card{
+    width: 70vw;
+  }
+}
+@media screen and (max-width : 600px ){
+  .mission{
+    margin: 2%;
+    margin-top: 5%;
+  }
+}
