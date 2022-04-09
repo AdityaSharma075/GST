@@ -103,7 +103,7 @@
         <h1>GST</h1>
         <p>Hey You Can Also be ChangeMaker</p>
         <div class="form">
-            <form action="/volunteer/create" method="POST" >
+            <form onsubmit="return confirm('Thankyou for taking part in Volunteering!! . Please click ok to submit the form');" action="/volunteer/create" method="POST"  >
                   <div class="mb-3">
                     <label for="Name" class="form-label">Name</label>
                     <input type="text" name="Name" class="form-control" id="Name" placeholder="Enter Name" required>
@@ -139,4 +139,8 @@
         </div>
 </div>
 <%-include("footer") -%>
+
+<script>
+
+</script>
 

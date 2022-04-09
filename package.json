@@ -4,6 +4,7 @@
   "description": "We are developing a website for a charity trust (GIVING AND SHARING TRUST (GST))",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

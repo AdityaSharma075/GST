@@ -39,10 +39,10 @@ module.exports.create = async function (req, res) {
     console.log('Eroor in Creting Data in DataBase', error);
   }
 };
-module.exports.project=async function(req,res){
-    console.log("project");
-    let requestedid=req.params.id;
+module.exports.project = async function (req, res) {
+  // console.log("project");
+  let requestedid = req.params.id;
 
-        let project=await Project.findById(requestedid);
-        return res.render('project',{project:project}) ;
-}
+  let project = await Project.findById(requestedid);
+  return res.render('project', { project: project });
+};
