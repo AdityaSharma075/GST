@@ -1,6 +1,6 @@
 const razorPay = require('../config/razorPay');
 const crypto = require('crypto');
-
+const env = require('../config/enviornment');
 module.exports.donate = function (req, res) {
   return res.render('Donate');
 };
@@ -23,7 +23,7 @@ module.exports.confirm = function (req, res) {
 };
 
 module.exports.thankyou = function (req, res) {
-  const secret = 'uewGfqMWKLxNInxlWTHl4XoK';
+  const secret = env.razorPaySecret;
   const hash = crypto
     .createHmac('sha256', secret)
     .update(
